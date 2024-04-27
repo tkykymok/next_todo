@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { TodoList} from "@/components/molecules/TodoList";
 import {FormTextInput} from "@/components/atoms/FormTextInput";
 import {TodoFormValues} from "@/type/todoForm";
+import Button from "@/components/atoms/Button";
 
 const Page = () => {
   const {
@@ -44,12 +45,9 @@ const Page = () => {
             className="space-y-4"
           >
             <FormTextInput register={{ ...register("todoText") }} />
-            <button
-              type="submit"
-              className="bg-blue-500 text-white px-4 py-1 rounded-md"
-            >
+            <Button type="submit" >
               追加
-            </button>
+            </Button>
           </form>
           <TodoList todos={todos} onClickDel={onClickDel} />
         </div>
