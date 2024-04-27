@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { TodoList } from "@/components/molecules/TodoList";
-import { FormTextInput } from "@/components/atoms/FormTextInput";
 import { TodoForm } from "@/components/molecules/TodoForm";
 import { TodoFormValues } from "@/type/todoForm";
 

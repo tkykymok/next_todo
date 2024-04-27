@@ -3,11 +3,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { InputTodo } from "@/components/InputTodo";
 import { TodoList } from "@/components/molecules/TodoList";
-
-// ※簡易的に同じファイル内に定義してるが、実際は別ファイルに定義してimportする
-type TodoFormValues = {
-  todoText: string;
-};
+import {TodoFormValues} from "@/type/todoForm";
 
 const Page = () => {
   const {
